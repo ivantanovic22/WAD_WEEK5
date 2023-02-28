@@ -1,0 +1,21 @@
+<html>
+  <head>
+    {{>header}}
+  </head>
+  <body>
+  <p> {{ModulesInfo}}</p>
+  {{#modulesInfo}}
+  <div class="card">
+    <div class="card-body">
+          <h4 class="card-title">{{name}}</h4>
+          <p class="card-text">
+              Module leader: {{leader}} 
+          </p>
+          <p class="card-text">
+              Description: {{Description}}
+          </p>
+    </div>
+  </div> 
+  {{/modulesInfo}}
+  </body>
+</html>
